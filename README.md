@@ -2,11 +2,7 @@
 
 A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, Pythia, OPT, and GALACTICA.
 
-Its goal is to become the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) of text generation.
-
-|![Image1](https://github.com/oobabooga/screenshots/raw/main/qa.png) | ![Image2](https://github.com/oobabooga/screenshots/raw/main/cai3.png) |
-|:---:|:---:|
-|![Image3](https://github.com/oobabooga/screenshots/raw/main/gpt4chan.png) | ![Image4](https://github.com/oobabooga/screenshots/raw/main/galactica.png) |
+Goal: to become the AUTOMATIC1111 of text generation.
 
 ## Features
 
@@ -26,26 +22,7 @@ Its goal is to become the [AUTOMATIC1111/stable-diffusion-webui](https://github.
 * Nice HTML output for GPT-4chan
 * API, including endpoints for websocket streaming ([see the examples](https://github.com/oobabooga/text-generation-webui/blob/main/api-examples))
 
-To learn how to use the various features, check out the Documentation: https://github.com/oobabooga/text-generation-webui/tree/main/docs
-
-## Installation
-
-### One-click installers
-
-| Windows | Linux | macOS |
-|-------|--------|--------|
-| [oobabooga-windows.zip](https://github.com/oobabooga/text-generation-webui/releases/download/installers/oobabooga_windows.zip) | [oobabooga-linux.zip](https://github.com/oobabooga/text-generation-webui/releases/download/installers/oobabooga_linux.zip) |[oobabooga-macos.zip](https://github.com/oobabooga/text-generation-webui/releases/download/installers/oobabooga_macos.zip) |
-
-Just download the zip above, extract it, and double-click on "start". The web UI and all its dependencies will be installed in the same folder.
-
-* The source codes are here: https://github.com/oobabooga/one-click-installers
-* There is no need to run the installers as admin.
-* AMD doesn't work on Windows.
-* Huge thanks to [@jllllll](https://github.com/jllllll), [@ClayShoaf](https://github.com/ClayShoaf), and [@xNul](https://github.com/xNul) for their contributions to these installers.
-
 ### Manual installation using Conda
-
-Recommended if you have some experience with the command line.
 
 #### 0. Install Conda
 
@@ -325,16 +302,3 @@ Out of memory errors? [Check the low VRAM guide](docs/Low-VRAM-guide.md).
 Inference settings presets can be created under `presets/` as yaml files. These files are detected automatically at startup.
 
 By default, 10 presets based on NovelAI and KoboldAI presets are included. These were selected out of a sample of 43 presets after applying a K-Means clustering algorithm and selecting the elements closest to the average of each cluster: [tSNE visualization](https://user-images.githubusercontent.com/112222186/228956352-1addbdb9-2456-465a-b51d-089f462cd385.png).
-
-## Contributing
-
-* Pull requests, suggestions, and issue reports are welcome. 
-* Make sure to carefully [search](https://github.com/oobabooga/text-generation-webui/issues) existing issues before starting a new one.
-* If you have some experience with git, testing an open pull request and leaving a comment on whether it works as expected or not is immensely helpful.
-* A simple way to contribute, even if you are not a programmer, is to leave a 👍 on an issue or pull request that you find relevant.
-
-## Credits
-
-- Gradio dropdown menu refresh button, code for reloading the interface: https://github.com/AUTOMATIC1111/stable-diffusion-webui
-- NovelAI and KoboldAI presets: https://github.com/KoboldAI/KoboldAI-Client/wiki/Settings-Presets
-- Code for early stopping in chat mode, code for some of the sliders: https://github.com/PygmalionAI/gradio-ui/
